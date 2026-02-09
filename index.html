@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Главная страница</title>
+
+        <link rel="stylesheet" href="main.css"> <!--Подключение CSS-файла-->
+    </head>
+    <body>
+        <script src="main.js"></script> <!--Подключение JS-файла-->
+
+        <header></header> <!--Шапка-->
+        <main></main> <!--Основа-->
+        <aside></aside> <!--Бока-->
+        <footer></footer> <!--Нижняя часть сайта-->
+
+        <a name="bottomOfPage"></a>
+        <h1>Заголовок 1</h1>
+        <h2>Заголовок 2</h2>
+        <h3>Заголовок 3</h3>
+        <h4>Заголовок 4</h4>
+        <h5>Заголовок 5</h5>
+        <h6 title="Секретка :p">Заголовок 6</h6>
+
+        <p>Просто <b>текст</b><br>
+        Просто <i>текст</i><br>
+        Просто <strike>текст</strike></p>
+        
+        a<sup>2</sup><br>
+        H<sub>2</sub>O
+
+        <hr>
+
+        <abbr title="Ты красавчик">Наведись на меня</abbr>
+        
+        <p>1<big>2<big>3</big></big> 1<small>2<small>3</small></small></p>
+
+<pre>@bot.event
+async def on_ready():
+    print(f'{bot.user} запущен!')</pre>
+
+        <code>x = 0</code>
+        
+        <ol>
+            <li>Пришёл домой</li>
+            <li>Затянулся</li>
+            <li>Откинулся</li>
+        </ol>
+
+        <ul>
+            <li>Пришёл домой</li>
+            <li>Затянулся</li>
+            <li>Откинулся</li>
+        </ul><br><br>
+
+        <progress max="100" value="35"></progress> <progress></progress><br><br>
+
+        <table border="1" width="250px">
+
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                </tr>
+            </thead>
+
+            <tbody align="center">
+                <tr>
+                    <td>Джон</td>
+                    <td>Тайтор</td>
+                </tr>
+                <tr>
+                    <td>Марк</td>
+                    <td>Робинсон</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+
+                </tr>
+            </tfoot>
+
+        </table><br>
+
+        <div>Не просто <span>текст</span></div><br>
+
+        <form action="" method="post">
+            <label for="993">Введите имя</label>
+            <input type="text" placeholder="Олег Монгол" maxlength="999" name="name" id="993" required> <!--Можно добавить hidden, readonly, value или disabled-->
+            
+            <label for="994">Введите пароль от банковского аккаунта</label>
+            <input type="password" id="994" required><br>
+
+            <label for="995">Выберите любимый цвет</label>
+            <input type="color" id="995" required>
+
+            <label for="996">Введите свою дату рождения</label>
+            <input type="date" id="996" required><br>
+
+            Выберите свой пол: 
+            <label for="998">Мужской</label>
+            <input type="radio" name="gender" id="998" required>
+
+            <label for="999">Женский</label>
+            <input type="radio" name="gender" id="999" required><br>
+            
+            <label for="1000">Загрузите фото своего паспорта</label>
+            <input type="file" id="1000" required><br>
+            
+            <label for="1003">Напишите эссе про верблюдов (минимум 500 символов)</label><br>
+            <textarea id="1003" placeholder="Верблюды имба" minlength="500" cols="50px" required></textarea><br>
+            
+            <label for="1004">Где вам больше нравится?</label> <!--Через size можно настраивать колличество отображаемых вариантов-->
+            <select id="1004" id="1004" required> <!--Можно выбрать несколько вариантов, если поставить multiple-->
+                <option>Сверху</option>
+                <option selected>Снизу</option>
+            </select><br>
+
+            <label for="997">Вы согласны, что все ваши данные сольют картелю?</label>
+            <input type="checkbox" id="997" required><br>
+
+            <details>
+                <summary>Подробнее о соглашении</summary>
+                Вы подтверждаете, что вы согласны на отправку и обработку данных сторонними лицами и отказываетесь от каких либо притензий, а так же отказываетесь от права на суд.
+            </details>
+
+            <input type="submit" id="1001" value="Отправить данные">
+            <input type="reset" id="1002" value="Очистить форму">
+            <!-- Есть ещё куча типов инпута-->
+
+        </form><br>
+        <button>Я подтверждаю, что я подтверждаю</button><br>
+    </body>
+</html>
